@@ -17,19 +17,47 @@
 </head>
 
 <body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+  your browser</a> to improve your experience and security.</p>
+<![endif]-->
 
-  <!-- Add your site or application content here -->
-  <p>Stonsdag, nesten like bra som <a href="http://stirsdag.no/">Stirsdag</a></p>
+<!-- Add your site or application content here -->
 
 
-  <script src="js/stonsdag.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/nb.js"></script>
-  Hvor lenge er det til Stonsdag?
-  <div id="isitwednesday"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/nb.js"></script>
+<script src="js/stonsdag.js"></script>
+<main>
+  <div id="main">
+    <div id="header" style="text-align:center;">
 
+      <span style="font-weight:bold; "><img src="img/logo.svg"><h1>- nesten like bra som <a href="http://stirsdag.no/">Stirsdag</a></h1></span>
+    </div>
+
+    <div id="whatisit">
+      <span style="font-weight:bold">Hva er Stonsdag for noe rart?</span><br/>
+      Stonsdag var en greie en liten løpegjeng som startet på flipp, inspirert av Stirsdag og deres suksess.
+    </div>
+    <br/>
+    <div id="whichdayisit">
+      <span style="font-weight:bold">Hvor lenge er det til Stonsdag?</span>
+      <div id="isitwednesday"></div>
+    </div>
+    <br/>
+    <div id="whereisit">
+      <span style="font-weight:bold">Hvor foregår det?</span><br/>
+      Stonsdag starter som regel på Sognsvann og går derfra.
+    </div>
+    <br/>
+    <div id="whoisit">
+      <span style="font-weight:bold">Hvem er med?</span><br/>
+      De siste gangene har blant annet disse vært med:
+    </div>
+
+
+  </div>
+</main>
 
 
 </body>
