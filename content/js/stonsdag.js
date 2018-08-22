@@ -36,3 +36,14 @@ window.addEventListener('load', function () {
 });
 
 
+function getEvents() {
+  let queryString = `${strava.base_url}/clubs/${strava.club}/group_events?access_token=${strava.access_token}`;
+  fetch(queryString).then(function (response) {
+    return response.json().then(function (data) {
+      data.forEach(function (item) {
+        console.log(item);
+      });
+
+    });
+  });
+}
