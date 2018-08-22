@@ -1,10 +1,12 @@
 "use strict";
 
+
+
 let date = new Date(),
   day = date.getDay(),
   isStonsdag = day === 3 ? true : false;
 
-function app() {
+function dayOfTheWeek() {
   let whatday = document.getElementById("isitwednesday");
   if (isStonsdag) {
     whatday.innerHTML = "Det er Stonsdag i dag!"
@@ -28,7 +30,9 @@ let daysUntilStonsdag = function (today) {
 let nextStonsdagDate = moment(date).locale('nb').add(daysUntilStonsdag(day), 'days').format('Do MMMM');
 
 window.addEventListener('load', function () {
-  app();
+  dayOfTheWeek();
+  getMembers();
+  getEvents();
 });
 
 
