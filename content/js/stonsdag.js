@@ -33,6 +33,7 @@ window.addEventListener('load', function () {
   dayOfTheWeek();
   getMembers();
   getEvents();
+  getAttendees();
 });
 
 
@@ -43,6 +44,19 @@ function getEvents() {
       data.forEach(function (item) {
         console.log(item);
       });
+
+    });
+  });
+}
+
+
+function getAttendees() {
+  let queryString = `${strava.base_url}/group_events/373836/rsvps?access_token=${strava.access_token}`;
+  fetch(queryString).then(function (response) {
+    return response.json().then(function (data) {
+
+        console.log(data);
+
 
     });
   });
